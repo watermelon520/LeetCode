@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2D0432C223161797009E9463 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432C123161797009E9463 /* main.m */; };
+		2D0432CE23161EC1009E9463 /* LPLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432CD23161EC1009E9463 /* LPLinkedList.m */; };
+		2D0432DD2316500F009E9463 /* _141_Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432DC2316500F009E9463 /* _141_Code.m */; };
+		2D0432E023165183009E9463 /* LCListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432DF23165183009E9463 /* LCListNode.m */; };
+		2D0432E623165B8B009E9463 /* _237_Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432E523165B8B009E9463 /* _237_Code.m */; };
+		2D0432EA23166186009E9463 /* _203_Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432E923166186009E9463 /* _203_Code.m */; };
+		2D0432ED23166B7D009E9463 /* _206_Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432EC23166B7D009E9463 /* _206_Code.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,18 @@
 /* Begin PBXFileReference section */
 		2D0432BE23161797009E9463 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0432C123161797009E9463 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D0432CC23161EC1009E9463 /* LPLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPLinkedList.h; sourceTree = "<group>"; };
+		2D0432CD23161EC1009E9463 /* LPLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPLinkedList.m; sourceTree = "<group>"; };
+		2D0432DB2316500F009E9463 /* _141_Code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _141_Code.h; sourceTree = "<group>"; };
+		2D0432DC2316500F009E9463 /* _141_Code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _141_Code.m; sourceTree = "<group>"; };
+		2D0432DE23165183009E9463 /* LCListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCListNode.h; sourceTree = "<group>"; };
+		2D0432DF23165183009E9463 /* LCListNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCListNode.m; sourceTree = "<group>"; };
+		2D0432E423165B8B009E9463 /* _237_Code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _237_Code.h; sourceTree = "<group>"; };
+		2D0432E523165B8B009E9463 /* _237_Code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _237_Code.m; sourceTree = "<group>"; };
+		2D0432E823166186009E9463 /* _203_Code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _203_Code.h; sourceTree = "<group>"; };
+		2D0432E923166186009E9463 /* _203_Code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _203_Code.m; sourceTree = "<group>"; };
+		2D0432EB23166B7D009E9463 /* _206_Code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _206_Code.h; sourceTree = "<group>"; };
+		2D0432EC23166B7D009E9463 /* _206_Code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _206_Code.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				2D0432C023161797009E9463 /* LeetCode */,
+				2D0432C923161E4D009E9463 /* 链表 */,
 				2D0432BF23161797009E9463 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +79,65 @@
 				2D0432C123161797009E9463 /* main.m */,
 			);
 			path = LeetCode;
+			sourceTree = "<group>";
+		};
+		2D0432C923161E4D009E9463 /* 链表 */ = {
+			isa = PBXGroup;
+			children = (
+				2D0432DE23165183009E9463 /* LCListNode.h */,
+				2D0432DF23165183009E9463 /* LCListNode.m */,
+				2D0432CB23161E8F009E9463 /* 链表实现 */,
+				2D0432CA23161E71009E9463 /* 141_环形链表 */,
+				2D0432E72316617C009E9463 /* 203_移除链表元素 */,
+				2D0432E223165B2F009E9463 /* 206_反转链表 */,
+				2D0432E323165B75009E9463 /* 237_删除链表中的节点 */,
+			);
+			path = "链表";
+			sourceTree = "<group>";
+		};
+		2D0432CA23161E71009E9463 /* 141_环形链表 */ = {
+			isa = PBXGroup;
+			children = (
+				2D0432DB2316500F009E9463 /* _141_Code.h */,
+				2D0432DC2316500F009E9463 /* _141_Code.m */,
+			);
+			path = "141_环形链表";
+			sourceTree = "<group>";
+		};
+		2D0432CB23161E8F009E9463 /* 链表实现 */ = {
+			isa = PBXGroup;
+			children = (
+				2D0432CC23161EC1009E9463 /* LPLinkedList.h */,
+				2D0432CD23161EC1009E9463 /* LPLinkedList.m */,
+			);
+			path = "链表实现";
+			sourceTree = "<group>";
+		};
+		2D0432E223165B2F009E9463 /* 206_反转链表 */ = {
+			isa = PBXGroup;
+			children = (
+				2D0432EB23166B7D009E9463 /* _206_Code.h */,
+				2D0432EC23166B7D009E9463 /* _206_Code.m */,
+			);
+			path = "206_反转链表";
+			sourceTree = "<group>";
+		};
+		2D0432E323165B75009E9463 /* 237_删除链表中的节点 */ = {
+			isa = PBXGroup;
+			children = (
+				2D0432E423165B8B009E9463 /* _237_Code.h */,
+				2D0432E523165B8B009E9463 /* _237_Code.m */,
+			);
+			path = "237_删除链表中的节点";
+			sourceTree = "<group>";
+		};
+		2D0432E72316617C009E9463 /* 203_移除链表元素 */ = {
+			isa = PBXGroup;
+			children = (
+				2D0432E823166186009E9463 /* _203_Code.h */,
+				2D0432E923166186009E9463 /* _203_Code.m */,
+			);
+			path = "203_移除链表元素";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +196,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D0432EA23166186009E9463 /* _203_Code.m in Sources */,
+				2D0432E023165183009E9463 /* LCListNode.m in Sources */,
+				2D0432CE23161EC1009E9463 /* LPLinkedList.m in Sources */,
+				2D0432E623165B8B009E9463 /* _237_Code.m in Sources */,
 				2D0432C223161797009E9463 /* main.m in Sources */,
+				2D0432ED23166B7D009E9463 /* _206_Code.m in Sources */,
+				2D0432DD2316500F009E9463 /* _141_Code.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

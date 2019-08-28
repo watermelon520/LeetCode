@@ -8,9 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+#import "LPLinkedList.h"
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        //init
+        
+        LPLinkedList *linkedList = [[LPLinkedList alloc] init];
+        
+        [linkedList addObject:@"11"];
+        [linkedList addObject:@"22"];
+        [linkedList addObject:@"33"];
+        
+        NSInteger index = [linkedList indexOfObject:@"44"];
+        
+        NSLog(@"%ld", index);
         
     }
     return 0;
