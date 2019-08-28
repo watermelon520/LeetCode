@@ -1,10 +1,14 @@
 //
-//  LPLinkedList.h
+//  LPSingleLinkedList。.h
 //  LeetCode
 //
 //  Created by 罗平 on 2019/8/28.
 //  Copyright © 2019 罗平. All rights reserved.
 //
+
+/*
+ *  单向链表
+ */
 
 #import <Foundation/Foundation.h>
 
@@ -12,7 +16,7 @@ static NSInteger const kNotFountTag = -1;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LPLinkedList : NSObject
+@interface LPSingleLinkedList : NSObject
 
 - (void)addObject:(id)object;
 

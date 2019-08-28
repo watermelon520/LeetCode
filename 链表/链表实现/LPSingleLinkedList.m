@@ -1,12 +1,12 @@
 //
-//  LPLinkedList.m
+//  LPSingleLinkedList.m
 //  LeetCode
 //
 //  Created by 罗平 on 2019/8/28.
 //  Copyright © 2019 罗平. All rights reserved.
 //
 
-#import "LPLinkedList.h"
+#import "LPSingleLinkedList.h"
 
 #define CheckObjectNil [self checkObjectNil:object];
 #define CheckIndexRange [self checkIndexRange:index];
@@ -26,14 +26,14 @@
 
 #pragma mark - LPLinkedList
 
-@interface LPLinkedList ()
+@interface LPSingleLinkedList ()
 
 @property (nonatomic, assign) NSUInteger size;
 @property (nonatomic, strong) LPLinkedListNode *first;
 
 @end
 
-@implementation LPLinkedList
+@implementation LPSingleLinkedList
 
 - (void)addObject:(id)object {
     CheckObjectNil

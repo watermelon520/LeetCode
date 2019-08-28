@@ -10,11 +10,12 @@
  *  https://leetcode-cn.com/problems/remove-linked-list-elements/
  *
  *  1.
- *  新建一个指针，反向创建链表
+ *  新建一个指针，重新反向创建链表
  *
  *  2.
- *  先把要删除的就是第一个节点这种情况过滤
- *  然后再删除后面的节点
+ *  n-1 n n+1 n+2
+ *  递归法。假设从n开始，后面的节点的顺序已经成功反向
+ *  则 n.next 是 n+1，要反向指向 n，所以 n.next.next = n；
  *
  */
 
@@ -32,7 +33,7 @@
     }
     return newNode;
 }
-// 3 2 1
+
 - (LCListNode *)reverseList2:(LCListNode *)head {
     if (head == nil || head.next == nil) return head;
     LCListNode *newNode = [self reverseList2:head.next];

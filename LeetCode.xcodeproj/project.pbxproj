@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2D0432C223161797009E9463 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432C123161797009E9463 /* main.m */; };
-		2D0432CE23161EC1009E9463 /* LPLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432CD23161EC1009E9463 /* LPLinkedList.m */; };
+		2D0432CE23161EC1009E9463 /* LPSingleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432CD23161EC1009E9463 /* LPSingleLinkedList.m */; };
 		2D0432DD2316500F009E9463 /* _141_Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432DC2316500F009E9463 /* _141_Code.m */; };
 		2D0432E023165183009E9463 /* LCListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432DF23165183009E9463 /* LCListNode.m */; };
 		2D0432E623165B8B009E9463 /* _237_Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432E523165B8B009E9463 /* _237_Code.m */; };
 		2D0432EA23166186009E9463 /* _203_Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432E923166186009E9463 /* _203_Code.m */; };
 		2D0432ED23166B7D009E9463 /* _206_Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432EC23166B7D009E9463 /* _206_Code.m */; };
+		A72108E22316CA3E003A7509 /* LPDoubleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = A72108E12316CA3E003A7509 /* LPDoubleLinkedList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,8 +32,8 @@
 /* Begin PBXFileReference section */
 		2D0432BE23161797009E9463 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0432C123161797009E9463 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2D0432CC23161EC1009E9463 /* LPLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPLinkedList.h; sourceTree = "<group>"; };
-		2D0432CD23161EC1009E9463 /* LPLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPLinkedList.m; sourceTree = "<group>"; };
+		2D0432CC23161EC1009E9463 /* LPSingleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPSingleLinkedList.h; sourceTree = "<group>"; };
+		2D0432CD23161EC1009E9463 /* LPSingleLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPSingleLinkedList.m; sourceTree = "<group>"; };
 		2D0432DB2316500F009E9463 /* _141_Code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _141_Code.h; sourceTree = "<group>"; };
 		2D0432DC2316500F009E9463 /* _141_Code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _141_Code.m; sourceTree = "<group>"; };
 		2D0432DE23165183009E9463 /* LCListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCListNode.h; sourceTree = "<group>"; };
@@ -43,6 +44,8 @@
 		2D0432E923166186009E9463 /* _203_Code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _203_Code.m; sourceTree = "<group>"; };
 		2D0432EB23166B7D009E9463 /* _206_Code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _206_Code.h; sourceTree = "<group>"; };
 		2D0432EC23166B7D009E9463 /* _206_Code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _206_Code.m; sourceTree = "<group>"; };
+		A72108E02316CA3E003A7509 /* LPDoubleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDoubleLinkedList.h; sourceTree = "<group>"; };
+		A72108E12316CA3E003A7509 /* LPDoubleLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDoubleLinkedList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +110,10 @@
 		2D0432CB23161E8F009E9463 /* 链表实现 */ = {
 			isa = PBXGroup;
 			children = (
-				2D0432CC23161EC1009E9463 /* LPLinkedList.h */,
-				2D0432CD23161EC1009E9463 /* LPLinkedList.m */,
+				2D0432CC23161EC1009E9463 /* LPSingleLinkedList.h */,
+				2D0432CD23161EC1009E9463 /* LPSingleLinkedList.m */,
+				A72108E02316CA3E003A7509 /* LPDoubleLinkedList.h */,
+				A72108E12316CA3E003A7509 /* LPDoubleLinkedList.m */,
 			);
 			path = "链表实现";
 			sourceTree = "<group>";
@@ -197,8 +202,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D0432EA23166186009E9463 /* _203_Code.m in Sources */,
+				A72108E22316CA3E003A7509 /* LPDoubleLinkedList.m in Sources */,
 				2D0432E023165183009E9463 /* LCListNode.m in Sources */,
-				2D0432CE23161EC1009E9463 /* LPLinkedList.m in Sources */,
+				2D0432CE23161EC1009E9463 /* LPSingleLinkedList.m in Sources */,
 				2D0432E623165B8B009E9463 /* _237_Code.m in Sources */,
 				2D0432C223161797009E9463 /* main.m in Sources */,
 				2D0432ED23166B7D009E9463 /* _206_Code.m in Sources */,

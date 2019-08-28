@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-#import "LPLinkedList.h"
+#import "LPSingleLinkedList.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        LPLinkedList *linkedList = [[LPLinkedList alloc] init];
+        LPSingleLinkedList *linkedList = [[LPSingleLinkedList alloc] init];
         
         [linkedList addObject:@"11"];
         [linkedList addObject:@"22"];
