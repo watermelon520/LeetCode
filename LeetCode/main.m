@@ -9,19 +9,23 @@
 #import <Foundation/Foundation.h>
 
 #import "LPSingleLinkedList.h"
+#import "LPDoubleLinkedList.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        LPSingleLinkedList *linkedList = [[LPSingleLinkedList alloc] init];
+        LPDoubleLinkedList *linkedList = [[LPDoubleLinkedList alloc] init];
         
         [linkedList addObject:@"11"];
         [linkedList addObject:@"22"];
         [linkedList addObject:@"33"];
         
-        NSInteger index = [linkedList indexOfObject:@"44"];
+        [linkedList removeObjectAtIndex:2];
         
-        NSLog(@"%ld", index);
+        [linkedList addObject:@"44"];
+        [linkedList insertObject:@"00" atIndex:0];
+        
+        NSLog(@"%@", linkedList);
         
     }
     return 0;

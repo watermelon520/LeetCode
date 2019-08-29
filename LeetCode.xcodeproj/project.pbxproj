@@ -14,6 +14,7 @@
 		2D0432E623165B8B009E9463 /* _237_Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432E523165B8B009E9463 /* _237_Code.m */; };
 		2D0432EA23166186009E9463 /* _203_Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432E923166186009E9463 /* _203_Code.m */; };
 		2D0432ED23166B7D009E9463 /* _206_Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0432EC23166B7D009E9463 /* _206_Code.m */; };
+		2D0509A823176B0C008121AE /* LPLinkedListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0509A723176B0C008121AE /* LPLinkedListNode.m */; };
 		A72108E22316CA3E003A7509 /* LPDoubleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = A72108E12316CA3E003A7509 /* LPDoubleLinkedList.m */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,9 @@
 		2D0432E923166186009E9463 /* _203_Code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _203_Code.m; sourceTree = "<group>"; };
 		2D0432EB23166B7D009E9463 /* _206_Code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _206_Code.h; sourceTree = "<group>"; };
 		2D0432EC23166B7D009E9463 /* _206_Code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _206_Code.m; sourceTree = "<group>"; };
+		2D0509A5231768B9008121AE /* LPLinkedProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPLinkedProtocol.h; sourceTree = "<group>"; };
+		2D0509A623176B0C008121AE /* LPLinkedListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPLinkedListNode.h; sourceTree = "<group>"; };
+		2D0509A723176B0C008121AE /* LPLinkedListNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPLinkedListNode.m; sourceTree = "<group>"; };
 		A72108E02316CA3E003A7509 /* LPDoubleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDoubleLinkedList.h; sourceTree = "<group>"; };
 		A72108E12316CA3E003A7509 /* LPDoubleLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDoubleLinkedList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +114,9 @@
 		2D0432CB23161E8F009E9463 /* 链表实现 */ = {
 			isa = PBXGroup;
 			children = (
+				2D0509A5231768B9008121AE /* LPLinkedProtocol.h */,
+				2D0509A623176B0C008121AE /* LPLinkedListNode.h */,
+				2D0509A723176B0C008121AE /* LPLinkedListNode.m */,
 				2D0432CC23161EC1009E9463 /* LPSingleLinkedList.h */,
 				2D0432CD23161EC1009E9463 /* LPSingleLinkedList.m */,
 				A72108E02316CA3E003A7509 /* LPDoubleLinkedList.h */,
@@ -207,6 +214,7 @@
 				2D0432CE23161EC1009E9463 /* LPSingleLinkedList.m in Sources */,
 				2D0432E623165B8B009E9463 /* _237_Code.m in Sources */,
 				2D0432C223161797009E9463 /* main.m in Sources */,
+				2D0509A823176B0C008121AE /* LPLinkedListNode.m in Sources */,
 				2D0432ED23166B7D009E9463 /* _206_Code.m in Sources */,
 				2D0432DD2316500F009E9463 /* _141_Code.m in Sources */,
 			);

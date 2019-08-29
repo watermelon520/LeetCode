@@ -8,24 +8,6 @@
 
 #import "LPSingleLinkedList.h"
 
-#define CheckObjectNil [self checkObjectNil:object];
-#define CheckIndexRange [self checkIndexRange:index];
-
-#pragma mark - LPLinkedListNode
-
-@interface LPLinkedListNode : NSObject
-
-@property (nonatomic, strong) id object;
-@property (nonatomic, strong) LPLinkedListNode *next;
-
-@end
-
-@implementation LPLinkedListNode
-
-@end
-
-#pragma mark - LPLinkedList
-
 @interface LPSingleLinkedList ()
 
 @property (nonatomic, assign) NSUInteger size;
@@ -43,13 +25,12 @@
 - (void)insertObject:(id)object atIndex:(NSUInteger)index {
     CheckObjectNil
     NSAssert(index >= 0 && index <= self.size, @"index 超出边界");
-    LPLinkedListNode *newNode = [[LPLinkedListNode alloc] init];
-    newNode.object = object;
+    LPLinkedListNode *newNode = [[LPLinkedListNode alloc] initWithObject:object];
     if (index == 0) {
         newNode.next = self.first;
         self.first = newNode;
     } else {
-        LPLinkedListNode *previous = [self previousNodeAtIndex:index];
+        LPLinkedListNode *previous = [self nodeAtIndex:index - 1];
         newNode.next = previous.next;
         previous.next = newNode;
     }
@@ -66,7 +47,7 @@
     if (index == 0) {
         self.first = self.first.next;
     } else {
-        LPLinkedListNode *previous = [self previousNodeAtIndex:index];
+        LPLinkedListNode *previous = [self nodeAtIndex:index - 1];
         previous.next = previous.next.next;
     }
     self.size --;
@@ -95,13 +76,9 @@
     return kNotFountTag;
 }
 
-- (id)objectOfIndex:(NSUInteger)index {
+- (id)objectAtIndex:(NSUInteger)index {
     CheckIndexRange
-    LPLinkedListNode *node = self.first;
-    for (NSInteger i = 0; i < index; i ++) {
-        node = node.next;
-    }
-    return node.object;
+    return [self nodeAtIndex:index].object;
 }
 
 - (NSUInteger)count {
@@ -134,19 +111,14 @@
 
 - (LPLinkedListNode *)nodeAtIndex:(NSUInteger)index {
     CheckIndexRange
+    if (index == 0) {
+        return nil;
+    }
     LPLinkedListNode *node = self.first;
     for (NSInteger i = 0; i < index; i ++) {
         node = node.next;
     }
     return node;
-}
-
-- (LPLinkedListNode *)previousNodeAtIndex:(NSUInteger)index {
-    if (index == 0) {
-        return nil;
-    } else {
-        return [self nodeAtIndex:index - 1];
-    }
 }
 
 @end

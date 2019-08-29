@@ -11,32 +11,11 @@
  */
 
 #import <Foundation/Foundation.h>
-
-static NSInteger const kNotFountTag = -1;
+#import "LPLinkedProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LPSingleLinkedList : NSObject
-
-- (void)addObject:(id)object;
-
-- (void)insertObject:(id)object atIndex:(NSUInteger)index;
-
-- (void)removeObject:(id)object;
-
-- (void)removeObjectAtIndex:(NSUInteger)index;
-
-- (void)removeAllObjects;
-
-- (void)setObject:(id)object atIndex:(NSUInteger)index;
-
-- (NSInteger)indexOfObject:(id)object;
-
-- (id)objectOfIndex:(NSUInteger)index;
-
-- (NSUInteger)count;
-
-- (BOOL)isEmpty;
+@interface LPSingleLinkedList : NSObject <LPLinkedProtocol>
 
 @end
 
