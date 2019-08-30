@@ -10,11 +10,12 @@
 
 #import "LPSingleLinkedList.h"
 #import "LPDoubleLinkedList.h"
+#import "LPDoubleCircleLinkedList.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        LPDoubleLinkedList *linkedList = [[LPDoubleLinkedList alloc] init];
+        LPDoubleCircleLinkedList *linkedList = [[LPDoubleCircleLinkedList alloc] init];
         
         [linkedList addObject:@"11"];
         [linkedList addObject:@"22"];

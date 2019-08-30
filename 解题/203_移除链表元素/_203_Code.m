@@ -21,7 +21,6 @@
 
 #import "_203_Code.h"
 
-//TODO: 罗平  还有递归解法，需要去官网详细查看
 @implementation _203_Code
 
 - (LCListNode *)removeElements:(LCListNode *)head object:(id)object {
@@ -59,6 +58,16 @@
     }
     
     return head;
+}
+
+- (LCListNode *)removeElements3:(LCListNode *)head object:(id)object {
+
+    head.next = [self removeElements3:head.next object:object];
+    if (head.object == object) {
+        return head.next;
+    } else {
+        return head;
+    }
 }
 
 @end
