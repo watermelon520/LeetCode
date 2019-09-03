@@ -7,8 +7,6 @@
 //
 
 /*
- *  https://leetcode-cn.com/problems/remove-linked-list-elements/
- *
  *  1.
  *  新建一个指针，重新反向创建链表
  *

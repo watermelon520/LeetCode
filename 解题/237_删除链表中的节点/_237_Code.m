@@ -7,8 +7,6 @@
 //
 
 /*
- *  https://leetcode-cn.com/problems/delete-node-in-a-linked-list/
- *
  *  这里只传入了将要删除的节点
  *  将该节点的next的值复制给该节点，并将改节点的next指向下一节点的next (这里要保证删除的不是尾节点，题目中有说明)
  */

@@ -7,8 +7,6 @@
 //
 
 /*
- *  https://leetcode-cn.com/problems/remove-linked-list-elements/
- *
  *  1.
  *  用一个指针记录头节点，一个指针记录上一个节点
  *  如果

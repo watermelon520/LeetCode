@@ -7,8 +7,6 @@
 //
 
 /*
- *  https://leetcode-cn.com/problems/score-of-parentheses/
- *
  *  我们用一个栈来维护当前所在的深度，以及每一层深度的得分
  *  有一种例外情况，如果遇到的是 ()，那么只将得分加一
  */

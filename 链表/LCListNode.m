@@ -18,4 +18,14 @@
     return self;
 }
 
+- (NSString *)description {
+    NSMutableString *string = [NSMutableString stringWithFormat:@"%@", self.object];
+    LCListNode *nextNode = self.next;
+    while (nextNode) {
+        [string appendFormat:@"->%@", nextNode.object];
+        nextNode = nextNode.next;
+    }
+    return string;
+}
+
 @end

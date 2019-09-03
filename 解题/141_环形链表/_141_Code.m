@@ -7,8 +7,6 @@
 //
 
 /*
- *  https://leetcode-cn.com/problems/linked-list-cycle/
- *
  *  1.利用快慢指针
  *  慢指针一次跑一格，快指针一次跑两格，如果是环形链表，那在慢指针跑完之前，快指针一定会和慢指针相遇
  *

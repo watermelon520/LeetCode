@@ -6,6 +6,10 @@
 //  Copyright © 2019 罗平. All rights reserved.
 //
 
+/*
+ *  https://leetcode-cn.com/problems/remove-linked-list-elements/
+ */
+
 #import <Foundation/Foundation.h>
 #import "LCListNode.h"
 

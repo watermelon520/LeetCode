@@ -8,25 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-#import "LPSingleLinkedList.h"
-#import "LPDoubleLinkedList.h"
-#import "LPDoubleCircleLinkedList.h"
-
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        LPDoubleCircleLinkedList *linkedList = [[LPDoubleCircleLinkedList alloc] init];
         
-        [linkedList addObject:@"11"];
-        [linkedList addObject:@"22"];
-        [linkedList addObject:@"33"];
-        
-        [linkedList removeObjectAtIndex:2];
-        
-        [linkedList addObject:@"44"];
-        [linkedList insertObject:@"00" atIndex:0];
-        
-        NSLog(@"%@", linkedList);
         
     }
     return 0;
