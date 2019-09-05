@@ -10,22 +10,22 @@
 
 @implementation _002_Code
 
-+ (void)load {
-    
++ (void)initialize {
+
     /*
      输入：(2 -> 4 -> 3) + (5 -> 6 -> 4)
      输出：7 -> 0 -> 8
      原因：342 + 465 = 807
      */
-    
+
     LCListNode *list1 = [[LCListNode alloc] initWithObject:@(2)];
 //    list1.next = [[LCListNode alloc] initWithObject:@(4)];
 //    list1.next.next = [[LCListNode alloc] initWithObject:@(3)];
-    
+
     LCListNode *list2 = [[LCListNode alloc] initWithObject:@(8)];
 //    list2.next = [[LCListNode alloc] initWithObject:@(6)];
 //    list2.next.next = [[LCListNode alloc] initWithObject:@(4)];
-    
+
     _002_Code *a = [[_002_Code alloc] init];
     LCListNode *b = [a addTwoNumbersList1:list1 list2:list2];
     NSLog(@"%@", b);
